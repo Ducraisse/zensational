@@ -1,0 +1,25 @@
+.footer {
+
+  &__copyright {
+    background: $bg-pink;
+    float: left;
+    padding: ($spacing-unit * 4 + 2) 0;
+    text-align: center;
+    width: 100%;
+
+    p {
+      @include font-size(10px);
+      @include line-height(16px);
+      color: $theme-white;
+      display: block;
+      margin-bottom: ($spacing-unit);
+
+      @media #{$ipad} {
+        @include font-size(12px);
+      }
+
+    }
+
+  }
+
+}

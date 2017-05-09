@@ -1,0 +1,35 @@
+html,
+body {
+  @include font-size(14px);
+  font-family: $font-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $theme-black;
+  font-family: $font-stack;
+}
+
+
+p {
+  @include font-size(14px);
+  @include line-height(19px);
+  color: $theme-black;
+  font-family: $font-text;
+}
+
+ul {
+  list-style-position: inside;
+
+
+  li {
+    @include font-size(14px);
+    @include line-height(19px);
+    color: $theme-black;
+  }
+
+}

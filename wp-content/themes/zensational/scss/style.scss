@@ -8,6 +8,15 @@
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 @import '../node_modules/font-awesome/scss/font-awesome';
 
+// Header
+@import 'header/module-header';
+
+// Footer
+@import 'footer/module-footer';
+
+// Home
+@import 'home/module-home';
+
 // Vendor
 @import 'vendor/module-vendor';
 

@@ -1,0 +1,90 @@
+.footer {
+
+  &__subscribe {
+    background: $bg-pink;
+    float: left;
+    padding: ($spacing-unit * 4) 0;
+    width: 100%;
+
+    .subscribe {
+      text-align: center;
+
+      label {
+        @include font-size(16px);
+        @include line-height(25px);
+        color: $theme-white;
+        display: block;
+        margin-bottom: ($spacing-unit * 2);
+        text-transform: uppercase;
+
+        @media #{$ipad} {
+          display: inline-block;
+          margin-right: ($spacing-unit * 6);
+        }
+
+      }
+
+      &__holder {
+        display: block;
+
+        @media #{$ipad} {
+          display: inline-block;
+        }
+
+        input {
+          @include font-size(14px);
+          background: $theme-white;
+          border: 0;
+          border-radius: 0;
+          color: $theme-black;
+          height: 35px;
+          outline: none;
+          padding-left: ($spacing-unit);
+
+          @media #{$ipad} {
+            height: 60px;
+            max-width: 404px;
+            min-width: 404px;
+            width: 100%;
+          }
+
+        }
+
+        button {
+          @include font-size(14px);
+          @include line-height(21px);
+          background: transparent;
+          border: 2px solid $theme-white;
+          border-radius: 0;
+          color: $theme-white;
+          cursor: pointer;
+          margin-left: ($spacing-unit * 2);
+          outline: none;
+          padding: ($spacing-unit + 1) ($spacing-unit * 2);
+          text-align: center;
+          text-transform: uppercase;
+          transition: .4s transform cubic-bezier(.19, 1, .22, 1);
+
+          &:hover {
+            background: $theme-white;
+            color: $text-pink;
+          }
+
+          @media #{$ipad} {
+            @include line-height(22px);
+            padding: ($spacing-unit * 4 - 2) ($spacing-unit * 2);
+            margin-left: ($spacing-unit * 5);
+            max-width: 104px;
+            min-width: 104px;
+            width: 100%;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
