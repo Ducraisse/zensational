@@ -1,2 +1,6 @@
 *.log
 .idea/
+wp-content/plugins/hello.php
+/readme.html
+/license.txt
+.vagrant/
