@@ -44,41 +44,48 @@
 
 <body id="page1" <?php body_class(); ?>>
 
-<header class="header navbar-fixed-top bg-white">
+<header class="header">
     <nav>
-        <div class="col-xs-12">
-            <div class="row">
-                <a class="sub-logo" href="<?php echo get_home_url(); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-name.png" alt="interstate logo" width="131" height="38" class="img-responsive">
-                </a>
-                <div class="navbar navbar-default">
-                    <div class="navbar-default__btn-holder">
-                        <button type="button" class="navbar__button collapsed" id="nav1-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <i class="fa fa-bars"></i>
-                            <span class="d5-close">&times</span>
-                        </button>
-                        <div class="navbar-default__btn-holder__text text-holder">
-                            <div class="navbar-default__btn-holder__text__inner text-inner">
-                                <span>Menu</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-holder-collapse" id="bs-example-navbar-collapse-1">
-                    <div class="nav-holder">
-                        <?php /* Primary navigation */
-                        wp_nav_menu( array(
-                                'menu' => 'top_menu',
-                                'depth' => 2,
-                                'container' => false,
-                                'menu_class' => 'nav',
-                                //Process nav menu using our custom nav walker
-                                'walker' => new wp_bootstrap_navwalker())
-                        );
-                        ?>
-                    </div>
-                </div>
+        <div class="navbar navbar-default">
+            <div class="navbar-default__btn-holder">
+                <button type="button" class="navbar__button collapsed" id="nav1-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-align-left" aria-hidden="true"></i>
+                    <span>Menu</span>
+                </button>
+            </div>
+        </div>
+        <a class="sub-logo" href="<?php echo get_home_url(); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/zen-logo.jpg" alt="interstate logo" class="img-responsive">
+        </a>
+        <div class="hidden-xs social-holder">
+            <ul>
+                <li>
+                    <a href="#">BOOK APPOINTMENT</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-holder-collapse" id="bs-example-navbar-collapse-1">
+            <div class="nav-holder">
+                <?php /* Primary navigation */
+                wp_nav_menu( array(
+                        'menu' => 'top_menu',
+                        'depth' => 2,
+                        'container' => false,
+                        'menu_class' => 'nav',
+                        //Process nav menu using our custom nav walker
+                        'walker' => new wp_bootstrap_navwalker())
+                );
+                ?>
             </div>
         </div>
     </nav>

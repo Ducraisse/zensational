@@ -12,10 +12,15 @@
       @include line-height(16px);
       color: $theme-white;
       display: block;
+      font-family: $font-stack;
       margin-bottom: ($spacing-unit);
 
+      a {
+        color: $theme-white;
+      }
+
       @media #{$ipad} {
-        @include font-size(12px);
+        @include font-size(14px);
       }
 
     }

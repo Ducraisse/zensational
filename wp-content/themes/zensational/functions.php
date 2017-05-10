@@ -35,7 +35,7 @@ if ( ! is_admin() ) {
 
 
     //Include Google fonts Roboto
-    wp_enqueue_style('google-fonts', "//fonts.googleapis.com/css?family=Open+Sans|PT+Sans");
+    wp_enqueue_style('google-fonts', "//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans");
 
 }
 

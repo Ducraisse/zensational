@@ -6,6 +6,10 @@
     padding: ($spacing-unit * 4) 0;
     width: 100%;
 
+    @media #{$ipad-landscape} {
+      padding: ($spacing-unit * 6) 0;
+    }
+
     &__item {
       float: left;
       margin-bottom: ($spacing-unit * 4);
@@ -15,6 +19,7 @@
     h2 {
       @include font-size(16px);
       color: $theme-white;
+      letter-spacing: .8px;
       margin-bottom: ($spacing-unit * 4);
     }
 
@@ -26,6 +31,7 @@
           @include line-height(22px);
           color: $theme-white;
           display: block;
+          font-family: $font-stack;
           margin-bottom: ($spacing-unit);
         }
 
@@ -45,6 +51,7 @@
             @include font-size(24px);
             cursor: pointer;
             display: block;
+            font-family: $font-stack;
           }
 
         }
@@ -56,9 +63,11 @@
     p {
       @include line-height(22px);
       color: $theme-white;
+      font-family: $font-stack;
 
       a {
         color: $theme-white;
+        font-family: $font-stack;
       }
 
     }

@@ -1,0 +1,69 @@
+.home {
+
+  &__slider {
+    float: left;
+    width: 100%;
+
+    .home-slider {
+
+      .owl-nav {
+        background: $theme-white;
+        bottom: 0;
+        height: 44px;
+        position: absolute;
+        text-align: center;
+        width: 90px;
+
+        @media #{$ipad} {
+          height: 100px;
+          width: 200px;
+        }
+
+        .owl-prev {
+          background-image: url('./images/left-arrow.png');
+          background-repeat: no-repeat;
+          display: inline-block;
+          height: 30px;
+          margin-right: ($spacing-unit * 5);
+          margin-top: ($spacing-unit * 2);
+          position: relative;
+          width: 22px;
+
+          &:before {
+            @include font-size(30px);
+            color: $text-about-pink;
+            content: '|';
+            cursor: auto;
+            font-weight: bold;
+            left: 30px;
+            position: absolute;
+            top: -9px;
+
+            @media #{$ipad} {
+              left: 40px;
+            }
+
+          }
+
+          @media #{$ipad} {
+            margin-right: ($spacing-unit * 10);
+            margin-top: ($spacing-unit * 7);
+          }
+
+        }
+
+        .owl-next {
+          background-image: url('./images/right-arrow.png');
+          background-repeat: no-repeat;
+          display: inline-block;
+          height: 30px;
+          width: 22px;
+        }
+
+      }
+
+    }
+
+  }
+
+}

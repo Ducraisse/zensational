@@ -6,6 +6,10 @@
     padding: ($spacing-unit * 4) 0;
     width: 100%;
 
+    @media #{$ipad-landscape} {
+      padding: ($spacing-unit * 10) 0;
+    }
+
     .subscribe {
       text-align: center;
 
@@ -14,12 +18,18 @@
         @include line-height(25px);
         color: $theme-white;
         display: block;
+        letter-spacing: 1px;
         margin-bottom: ($spacing-unit * 2);
         text-transform: uppercase;
 
         @media #{$ipad} {
           display: inline-block;
           margin-right: ($spacing-unit * 6);
+        }
+
+
+        @media #{$ipad-landscape} {
+          @include font-size(20px);
         }
 
       }
@@ -42,7 +52,7 @@
           padding-left: ($spacing-unit);
 
           @media #{$ipad} {
-            height: 60px;
+            height: 50px;
             max-width: 404px;
             min-width: 404px;
             width: 100%;
@@ -72,7 +82,7 @@
 
           @media #{$ipad} {
             @include line-height(22px);
-            padding: ($spacing-unit * 4 - 2) ($spacing-unit * 2);
+            padding: ($spacing-unit + 7) ($spacing-unit * 2);
             margin-left: ($spacing-unit * 5);
             max-width: 104px;
             min-width: 104px;

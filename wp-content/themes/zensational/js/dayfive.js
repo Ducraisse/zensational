@@ -1,11 +1,12 @@
 jQuery(function($) {
     
-    $('.contact-slider').owlCarousel({
+    $('.home-slider').owlCarousel({
         items:1,
         lazyLoad:true,
         loop:true,
         margin:0,
         autoplay: true,
+        nav: true,
         autoplaySpeed: 2000
     });
 

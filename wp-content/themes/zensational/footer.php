@@ -82,7 +82,7 @@
     </div>
     <div class="footer__copyright">
         <p>© Copyright 2016 Zensational Skin and Beauty Therapy</p>
-        <p>Site build by Dayfive Digital </p>
+        <p>Site build by <a target="_blank" href="http://dayfive.co.uk/">Dayfive Digital</a> </p>
     </div>
 </footer>
 

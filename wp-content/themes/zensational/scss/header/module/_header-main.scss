@@ -1,0 +1,108 @@
+.header {
+  background: $bg-header;
+  float: left;
+  width: 100%;
+
+  @media #{$ipad} {
+    text-align: center;
+  }
+
+  .navbar {
+    background: $bg-menu;
+    display: inline-block;
+    float: left;
+    padding: ($spacing-unit * 3);
+
+    @media #{$ipad} {
+      padding: ($spacing-unit * 6 + 2) ($spacing-unit * 7);
+    }
+
+    button {
+      @include font-size(20px);
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      color: $theme-white;
+      cursor: pointer;
+      outline: none;
+
+      span {
+        @include font-size(12px);
+        display: inline-block;
+        padding-left: ($spacing-unit * 2);
+        vertical-align: middle;
+      }
+
+    }
+
+  }
+
+  .social-holder {
+    display: inline-block;
+    float: right;
+    padding: ($spacing-unit * 3);
+
+    @media #{$ipad} {
+      padding: ($spacing-unit * 6 + 2) ($spacing-unit * 3);
+    }
+
+    @media #{$desktop} {
+      padding: ($spacing-unit * 6 + 2) ($spacing-unit * 7);
+    }
+
+    ul {
+
+      li {
+        display: inline-block;
+        margin-right: ($spacing-unit * 2);
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        a {
+          @include font-size(12px);
+          color: $theme-white;
+          letter-spacing: .9px;
+
+          i {
+            @include font-size(20px);
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .sub-logo {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: 66%;
+
+    @media #{$ipad} {
+      float: none;
+      width: auto;
+    }
+
+
+    img {
+      margin: 0 auto;
+      max-width: 192px;
+      width: 90%;
+
+      @media #{$ipad} {
+        max-width: 280px;
+        width: 100%;
+      }
+
+    }
+
+  }
+
+}
+
+
