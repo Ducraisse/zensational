@@ -74,7 +74,7 @@
                 </li>
             </ul>
         </div>
-        <div class="nav-holder-collapse" id="bs-example-navbar-collapse-1">
+        <div class="nav-holder-collapse hidden" id="bs-example-navbar-collapse-1">
             <div class="nav-holder">
                 <?php /* Primary navigation */
                 wp_nav_menu( array(
