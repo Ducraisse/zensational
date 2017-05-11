@@ -7,6 +7,7 @@
 // Import Bootstrap & Custom File
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 @import '../node_modules/font-awesome/scss/font-awesome';
+@import 'global/module/global-fontawesome';
 
 // Header
 @import 'header/module-header';
